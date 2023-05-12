@@ -1,0 +1,39 @@
+li:hover,
+.home:hover {
+  background-color: rgb(51, 59, 61);
+}
+
+i:hover,
+a:hover {
+  background-color: rgb(24, 27, 28);
+}
+nav {
+  background-color: #3b3b3b;
+}
+
+i {
+  font-size: 24px;
+  padding-right: 6px;
+  color: #6f7180;
+}
+
+.nav-home:hover {
+  background-color: rgb(77, 88, 91);
+}
+
+a {
+  display: flex;
+  align-items: center;
+  padding: 3px 4px;
+  margin-bottom: 2px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+li {
+  display: inline-flex;
+}
+
+:host ::ng-deep li.mat-radio-group .mat-radio-button .mat-radio-label-content {
+  color: white !important;
+}

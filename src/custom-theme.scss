@@ -1,0 +1,25 @@
+@use "@angular/material" as mat;
+
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import "@angular/material/theming";
+
+// Define a custom theme
+$custom-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: mat-palette($mat-blue),
+      accent: mat-palette($mat-red),
+      warn: mat-palette($mat-yellow),
+    ),
+    typography: mat-typography-config(),
+    radio: (
+      label: (
+        color: white // Set the label text color to white,
+      ),
+    ),
+  )
+);
+
+// Apply the custom theme to the Angular Material components
+@include mat-core();
+@include angular-material-theme($custom-theme);
